@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Chat Assistant — Conversation Memory</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="brand">
+        <div class="logo">💬</div>
+        <div>
+          <h1>Chat Assistant</h1>
+          <p>
+            <span class="dot" id="connectionDot"></span>
+            <span id="connectionStatus">Connecting to Qwen Model...</span>
+          </p>
+        </div>
+      </div>
+      <button type="button" class="clear" id="clearBtn">Clear Chat</button>
+    </header>
+
+    <section class="memory" aria-label="Conversation memory">
+      <button type="button" id="memoryToggle" class="memory-head" aria-expanded="false">
+        <span class="memory-title">◉ &nbsp; Conversation Memory Usage</span>
+        <span class="memory-total">
+          <strong id="memoryCount">0/10</strong> messages <span id="arrow">⌄</span>
+        </span>
+      </button>
+      <div class="track"><div id="memoryFill"></div></div>
+      <div id="memoryDetails" class="memory-details" hidden>
+        <p>Only these 10 most recent messages are remembered by Qwen.</p>
+        <div id="memoryList" class="memory-list">No messages yet.</div>
+      </div>
+    </section>
+
+    <main class="chat" id="chat" aria-label="Chat messages" aria-live="polite">
+      <div class="welcome">
+        <div class="welcome-icon">💬</div>
+        <h2>How can I help you?</h2>
+        <p>Ask any question, I will do my best to assist you.</p>
+      </div>
+    </main>
+
+    <div class="typing" id="typing" hidden>
+      <span></span><span></span><span></span> ChatBot is generating reply...
+    </div>
+
+    <footer>
+      <form id="chatForm" class="composer">
+        <textarea id="message" rows="1" placeholder="Type your message here..." aria-label="Your message" autocomplete="off"></textarea>
+        <button type="submit" id="sendBtn" aria-label="Send message" title="Send message">
+          Send
+        </button>
+      </form>
+      <div class="footer-row">
+        <span id="status" role="status">Status: Connecting to backend...</span>
+        <span>Developed by Oyeyemi Dare</span>
+      </div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
