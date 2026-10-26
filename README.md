@@ -14,3 +14,10 @@ The backend expose three endpoints:
 ## Build a UI
 
 Once your backend is running, we build a user interface for it. It is simple a desktop app, a CLI tool. The only requirement is that it connects to `/chat` endpoint and shows the conversation.
+
+## To Run
+
+Activate your environment
+type and run this in terminal: python -m http.server 8000 
+
+Then access the url displayed on terminal
