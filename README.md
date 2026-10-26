@@ -21,3 +21,8 @@ Once your backend is running, we build a user interface for it. It is simple a d
 - Activate your environment in the terminal. Type and run this: python -m http.server 8000 
 
 - Access the chatbot interface using the port displayed in the terminal
+
+## Interface
+
+<img width="1372" height="955" alt="Screenshot 2026-10-26 at 14 04 46" src="https://github.com/user-attachments/assets/fd55622c-f83f-4d5b-bb62-099937cf0533" />
+
