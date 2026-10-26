@@ -16,8 +16,8 @@ The backend expose three endpoints:
 Once your backend is running, we build a user interface for it. It is simple a desktop app, a CLI tool. The only requirement is that it connects to `/chat` endpoint and shows the conversation.
 
 ## To Run
+- Run the notebook 
+  
+- Activate your environment in the terminal. Type and run this: python -m http.server 8000 
 
-Activate your environment
-type and run this in terminal: python -m http.server 8000 
-
-Then access the url displayed on terminal
+- Access the chatbot interface using the port displayed in the terminal
